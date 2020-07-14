@@ -36,11 +36,15 @@ See 'rubriknasshares.csv' as an example
 
 .EXAMPLE
 Add-RubrikNASShares.ps1
-This will prompt for all variables
+This will prompt for all input arguments
 
 .EXAMPLE
 Add-RubrikNASShares.ps1 -server <rubrik_host> -csvfile <csv_filename>
-Reads in CSV file and adds each share to a host and then assigns a Fileset + SLA to the share
+Reads in CSV file and adds each share to the associated NAS Host
+
+.EXAMPLE
+Add-RubrikNASShares.ps1 -server <rubrik_host> -username <user> -password <password> -csvfile <csv_filename>
+Reads in CSV file and adds each share to the associated NAS Host
 
 #>
 
